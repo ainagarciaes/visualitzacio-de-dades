@@ -26,9 +26,8 @@ const svg = d3.select("#my_dataviz")
       .attr("transform",`translate(${margin.left},${margin.top})`);
 
 // Read dummy data
-// d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_researcherNetwork.json").then( function(data) {
 
-  d3.json("https://storage.googleapis.com/kagglesdsdata/datasets/826031/1411936/starwars-episode-1-interactions-allCharacters.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20220410%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220410T172202Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=6900399d06be8250f8d752010795a86c6c9c659abab72d5d41d0b06a42ba5da6dac1b3e8b178aa7121221ee207e07d92d6b6c5504fdea34a1644e47ac5a7a2a97aae2ed396191d4fbef7a39a6d8fab2b49e58f44e90cea6cd78e8812ffd93ffcfdf088338dc74fc3bcd335b49b7def8f804916e9cb9b3ffc974f3a127f6dd14f2d00aa40ccdccf7120cbf5406c6a6e8cbd95ccc93742fb8a1f4b0cab4bfc8c1a7888497944a9f614223eb2f436268987aaf5d506d9d1aca0aca9dfa3a2847fcec8b6e96f88f17613bcac658cfde4afcac8cec0901629508a352c9187696ecad14330ee43380a4273f56cb1e616d248db2a71af00cf7b9bb97ef5148ac8321e54").then( function(data) {
+  d3.json("https://raw.githubusercontent.com/ainagarciaes/visualitzacio-de-dades/main/arc/dataset.json").then( function(data) {
   // List of node names
   const allNodes = data.nodes.map(d => d.name)
 
